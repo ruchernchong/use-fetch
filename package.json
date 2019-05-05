@@ -8,9 +8,10 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "build": "rm -rf dist && tsc",
+    "build": "tsc",
     "lint": "tslint -c tslint.json 'src/**/*.ts'",
-    "test": "jest"
+    "test": "jest",
+    "test:watch": "jest --watch"
   },
   "dependencies": {
     "@types/jest": "^24.0.11",

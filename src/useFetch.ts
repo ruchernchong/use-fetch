@@ -3,7 +3,6 @@ import { useEffect, useState } from 'react';
 const useFetch = (
   url: string,
   options?: object,
-  deps?: object,
 ): { isLoading: boolean; data: any } => {
   const [data, setData] = useState(null);
   const [isLoading, setLoading] = useState(true);
@@ -15,9 +14,9 @@ const useFetch = (
         setData(response);
         setLoading(false);
       });
-  }, [deps]);
+  }, []);
 
-  return { isLoading, data };
+  return Object.assign([isLoading, data], { isLoading, data });
 };
 
 export default useFetch;
