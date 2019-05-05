@@ -46,7 +46,7 @@ jobs:
           name: Deploy to NPM
           command: |
             npm set //registry.npmjs.org/:_authToken=$NPM_TOKEN
-            npm publish
+            npm publish --access=public
 
 workflows:
   version: 2
