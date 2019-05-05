@@ -46,19 +46,5 @@
       "tslint --fix",
       "git add ."
     ]
-  },
-  "jest": {
-    "automock": false,
-    "collectCoverage": true,
-    "moduleFileExtensions": [
-      "ts",
-      "js"
-    ],
-    "setupFiles": [
-      "./setupJest.ts"
-    ],
-    "transform": {
-      "\\.(ts|tsx)$": "ts-jest"
-    }
   }
 }
