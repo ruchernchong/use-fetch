@@ -2,7 +2,6 @@
   "name": "@noblify/use-fetch",
   "version": "0.1.4",
   "main": "dist/index.js",
-  "source": "src/index.ts",
   "repository": "https://github.com/ruchern/use-fetch.git",
   "author": "Ru Chern Chong <hello@ruchern.net>",
   "license": "MIT",
