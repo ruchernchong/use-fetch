@@ -1,4 +1,5 @@
 language: node_js
+
 node_js:
   - 10
   - 12
@@ -8,12 +9,16 @@ cache: yarn
 script:
   - yarn test
   - npx codecov
-  - yarn build
 
-after_success:
-  deploy:
-    provider: npm
-    email: $NPM_EMAIL_ADDRESS
-    api_key: $NPM_AUTH_TOKEN
-    on:
-      tags: true
+jobs:
+  include:
+    - stage: deploy
+      if: branch = master
+      node_js: 12
+      script:
+        - yarn build
+      deploy:
+        provider: npm
+        api_key: $NPM_API_KEY
+        on:
+          tags: true
