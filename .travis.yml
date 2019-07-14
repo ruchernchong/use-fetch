@@ -10,9 +10,10 @@ script:
   - npx codecov
   - yarn build
 
-deploy:
-  provider: npm
-  email: NPM_EMAIL_ADDRESS
-  api_key: NPM_AUTH_TOKEN
-  on:
-    tags: true
+after_success:
+  deploy:
+    provider: npm
+    email: $NPM_EMAIL_ADDRESS
+    api_key: $NPM_AUTH_TOKEN
+    on:
+      tags: true
