@@ -1,0 +1,18 @@
+language: node_js
+node_js:
+  - 10
+  - 12
+
+cache: yarn
+
+script:
+  - yarn test
+  - npx codecov
+  - yarn build
+
+deploy:
+  provider: npm
+  email: NPM_EMAIL_ADDRESS
+  api_key: NPM_AUTH_TOKEN
+  on:
+    tags: true
