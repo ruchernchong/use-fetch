@@ -8,10 +8,6 @@
     "strict": true,
     "esModuleInterop": true
   },
-  "include": [
-    "src/**/*.ts"
-  ],
-  "exclude": [
-    "node_modules"
-  ]
+  "include": ["src/**/*.ts", "src/useFetch.test.ts"],
+  "exclude": ["node_modules"]
 }
