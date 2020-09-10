@@ -5,6 +5,9 @@
   "repository": "https://github.com/ruchern/use-fetch.git",
   "author": "Ru Chern Chong <hello@ruchern.net>",
   "license": "MIT",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "scripts": {
     "build": "tsc && typedoc",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
