@@ -1,8 +1,8 @@
 {
-  "name": "@noblify/use-fetch",
+  "name": "@noblitech/use-fetch",
   "version": "0.2.1",
   "main": "dist/index.js",
-  "repository": "https://github.com/ruchern/use-fetch.git",
+  "repository": "https://github.com/noblitech/use-fetch.git",
   "author": "Ru Chern Chong <hello@ruchern.net>",
   "license": "MIT",
   "publishConfig": {
