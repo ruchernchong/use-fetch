@@ -1,2 +1,3 @@
 # UseFetch
-A React Hook helper for the `fetch` API 
+
+A React Hook helper for the `fetch` API

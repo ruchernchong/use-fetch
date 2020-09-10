@@ -1,13 +1,22 @@
 {
   "compilerOptions": {
-    "target": "es5",
-    "module": "commonjs",
+    "moduleResolution": "node",
     "outDir": "dist",
     "sourceMap": false,
-    "resolveJsonModule": true,
-    "strict": true,
-    "esModuleInterop": true
+    "target": "es5"
   },
-  "include": ["src/**/*.ts", "src/useFetch.test.ts"],
-  "exclude": ["node_modules"]
+  "exclude": [
+    "dist",
+    "docs",
+    "node_modules",
+    "src/**/*.test.ts"
+  ],
+  "include": [
+    "src/**/*.ts"
+  ],
+  "typedocOptions": {
+    "mode": "modules",
+    "out": "docs",
+    "exclude": "**/*.js"
+  }
 }

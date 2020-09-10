@@ -2,21 +2,27 @@ import { useEffect, useState } from 'react';
 
 const useFetch = (
   url: string,
-  options?: object,
-): { isLoading: boolean; data: any } => {
-  const [data, setData] = useState(null);
-  const [isLoading, setLoading] = useState(true);
+  options?: object
+): {
+  isLoading: boolean;
+  data: object;
+} => {
+  const [data, setData] = useState<Object>({});
+  const [isLoading, setLoading] = useState<boolean>(true);
 
   useEffect(() => {
     fetch(url, options)
-      .then((response) => response.json())
-      .then((response) => {
-        setData(response);
+      .then(res => res.json())
+      .then(res => {
+        setData(res);
         setLoading(false);
       });
   }, []);
 
-  return Object.assign([isLoading, data], { isLoading, data });
+  return {
+    data,
+    isLoading
+  };
 };
 
 export default useFetch;

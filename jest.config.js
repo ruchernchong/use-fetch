@@ -1,8 +1,10 @@
 module.exports = {
-  automock: false,
-  collectCoverage: true,
-  moduleFileExtensions: ['ts', 'js'],
-  transform: {
-    '\\.ts$': 'ts-jest'
-  }
+    automock: false,
+    collectCoverage: true,
+    moduleFileExtensions: ['ts', 'js'],
+    testPathIgnorePatterns: [
+        "<rootDir>/dist",
+        "<rootDir>/docs",
+        "<rootDir>/node_modules"
+    ]
 };
