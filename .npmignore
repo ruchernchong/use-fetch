@@ -1,7 +1,5 @@
-.circleci/
 .idea/
 coverage/
-tests/
 .prettierignore
 .prettierrc
 *.log
