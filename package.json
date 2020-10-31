@@ -1,6 +1,6 @@
 {
   "name": "@noblitech/use-fetch",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "main": "dist/index.js",
   "repository": "https://github.com/noblitech/use-fetch.git",
   "author": "Ru Chern Chong <hello@ruchern.net>",
