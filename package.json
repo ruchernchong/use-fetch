@@ -19,7 +19,7 @@
     "@types/jest": "^24.0.15",
     "@types/react": "^16.8.23",
     "@types/react-dom": "^16.8.0",
-    "node-fetch": "3.1.1"
+    "node-fetch": "3.2.10"
   },
   "devDependencies": {
     "@babel/core": "^7.5.4",
@@ -47,7 +47,7 @@
     "react-dom": ">=16.13"
   },
   "resolutions": {
-    "node-fetch": "3.1.1"
+    "node-fetch": "3.2.10"
   },
   "husky": {
     "hooks": {
