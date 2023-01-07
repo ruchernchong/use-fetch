@@ -31,10 +31,8 @@
     "@typescript-eslint/parser": "4.1.0",
     "babel-jest": "^24.8.0",
     "eslint": "7.8.1",
-    "husky": "^3.0.0",
     "jest": "26.4.2",
     "jest-fetch-mock": "3.0.3",
-    "lint-staged": "^9.2.0",
     "prettier": "2.1.1",
     "react": "16.13.1",
     "react-dom": "16.13.1",
@@ -48,17 +46,5 @@
   },
   "resolutions": {
     "node-fetch": "3.2.10"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged && yarn test"
-    }
-  },
-  "lint-staged": {
-    "*.{js|ts}": [
-      "yarn format",
-      "yarn lint",
-      "git add ."
-    ]
   }
 }
