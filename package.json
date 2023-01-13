@@ -2,7 +2,7 @@
   "name": "use-fetch",
   "version": "0.3.1",
   "main": "dist/index.js",
-  "repository": "https://github.com/noblitech/use-fetch.git",
+  "repository": "https://github.com/ruchernchong/use-fetch.git",
   "author": "Ru Chern Chong <hello@ruchern.xyz>",
   "license": "MIT",
   "publishConfig": {
