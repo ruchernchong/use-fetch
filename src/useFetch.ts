@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState } from "react";
 
 const useFetch = (
   url: string,
@@ -7,13 +7,13 @@ const useFetch = (
   isLoading: boolean;
   data: object;
 } => {
-  const [data, setData] = useState<Object>({});
+  const [data, setData] = useState<object>({});
   const [isLoading, setLoading] = useState<boolean>(true);
 
   useEffect(() => {
     fetch(url, options)
-      .then(res => res.json())
-      .then(res => {
+      .then((res) => res.json())
+      .then((res) => {
         setData(res);
         setLoading(false);
       });
@@ -21,7 +21,7 @@ const useFetch = (
 
   return {
     data,
-    isLoading
+    isLoading,
   };
 };
 
