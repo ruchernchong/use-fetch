@@ -1,24 +1,15 @@
 {
   "compilerOptions": {
-    "lib": [
-      "dom",
-      "esnext"
-    ],
+    "baseUrl": "src",
+    "lib": ["dom", "esnext"],
     "moduleResolution": "node",
     "outDir": "dist",
     "sourceMap": false,
     "skipLibCheck": true,
     "target": "esnext"
   },
-  "exclude": [
-    "dist",
-    "docs",
-    "node_modules",
-    "src/**/*.test.ts"
-  ],
-  "include": [
-    "src/**/*.ts"
-  ],
+  "exclude": ["dist", "docs", "node_modules", "src/**/*.test.ts"],
+  "include": ["src/**/*.ts"],
   "typedocOptions": {
     "entryPoints": ["src/index.ts"],
     "out": "docs",
