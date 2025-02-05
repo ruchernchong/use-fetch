@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 const useFetch = (
   url: string,
-  options?: object
+  options?: RequestInit,
 ): {
   isLoading: boolean;
   data: object;
@@ -16,8 +16,10 @@ const useFetch = (
       .then((res) => {
         setData(res);
         setLoading(false);
-      });
-  }, []);
+      })
+      .catch((e) => console.error(e))
+      .finally(() => setLoading(false));
+  }, [options, url]);
 
   return {
     data,
