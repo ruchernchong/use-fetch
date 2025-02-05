@@ -6,7 +6,7 @@
     "src"
   ],
   "repository": "https://github.com/ruchernchong/use-fetch.git",
-  "author": "Ru Chern Chong <hello@ruchern.xyz>",
+  "author": "Ru Chern Chong <hello@ruchern.dev>",
   "license": "MIT",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
